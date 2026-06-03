@@ -15,7 +15,7 @@ public class Server{
          
          //creating input and output streams
          InputStreamReader inputStreamReader = new InputStreamReader(socket.getInputStream());
-         BufferedReader(intputSteamReader);
+         BufferedReader(intputStreamReader);
          PrintWriter(socket.getOutputStream(), true);
          
          //implrmenting methods to exchange data
