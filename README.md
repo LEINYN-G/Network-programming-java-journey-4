@@ -12,9 +12,9 @@ We can create such system using Java with the help of the concepts called Networ
 Java provides a colection of classes and interfaces that take care of low-level communication details between the client nd the server, and provide a powerful infrastucture for networking. These are mostly contained in the java.net package.
 In Java.net.Socket class represents a client socket, and the java.net.Server.Socket class provides a mechaninsm for the server program to listen for clients and establish connexn with them. e.g. ServerSocket server = new ServerSocket(5000);
 Here, the app. attempts to create a server socket that is bound to the specified port. Also, we can specify the backlog parameter that determines howmany incoming clients to store in a wait queue.
--> int getLocalPort(): It returns the local port number to which  the specified socket is bound, that is the port on which the server socket is listening on.
--> Socket accept(): It is used to accept the incoming request to the socket. When the ServerSocket invokes accept().
--> void bind(SocketAddress host, int backlog): It binds the serversocket to the specified socket address, that is IP address and the port number. If the specified address is null the system will automatically pick up an ephemeral port and valid local address to bind this socket.
+1) int getLocalPort(): It returns the local port number to which  the specified socket is bound, that is the port on which the server socket is listening on.
+2) Socket accept(): It is used to accept the incoming request to the socket. When the ServerSocket invokes accept().
+3) void bind(SocketAddress host, int backlog): It binds the serversocket to the specified socket address, that is IP address and the port number. If the specified address is null the system will automatically pick up an ephemeral port and valid local address to bind this socket.
 To have a lens, explore code sections!
 
 # CN essentials
@@ -25,9 +25,9 @@ Network protocols also provide the means by which computers can identify each ot
 
 <img src="Image/layer.jpeg" alt="App Screenshot" width="400" height="300">
 
--> IP Address: It is an unique number assigned to every device connected to a network that uses the Internet Protocol for communication. Each IP Address identifies the device's host network and the location of the device on the host network.
--> Nodes: A node is a connection point inside a network that can receive, send, create, or store date. Each node requires you to provide some form of identification to recive access, like an IP address.
--> Routers: It is a physical or virtual device that sends the imfo. contained in date packets between N/Ws. It analyzes data within the packets to determine the best way for the info. to reachits ultimate destination.
+1) IP Address: It is an unique number assigned to every device connected to a network that uses the Internet Protocol for communication. Each IP Address identifies the device's host network and the location of the device on the host network.
+2) Nodes: A node is a connection point inside a network that can receive, send, create, or store date. Each node requires you to provide some form of identification to recive access, like an IP address.
+3) Routers: It is a physical or virtual device that sends the imfo. contained in date packets between N/Ws. It analyzes data within the packets to determine the best way for the info. to reachits ultimate destination.
 
 <img src="Image/cs.jpeg" alt="App Screenshot" width="300" height="300">
 
@@ -44,3 +44,5 @@ N/W programming is also know as Socket Programming in java because it depends up
 Socket are categorized in two types: 1) A server socket    2) A client socket
 
 <img src="Image/cont.jpeg" alt="App Screenshot" width="200">
+
+<img src="Image/lets.jpeg" alt="App Screenshot" width="300" height="300">
